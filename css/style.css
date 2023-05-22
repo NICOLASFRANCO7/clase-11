@@ -1,0 +1,153 @@
+
+*{
+  margin: 0;
+  padding:0 ;
+  box-sizing: border-box;
+}
+
+
+body{
+  background-color: rgb(239, 239, 242);
+}
+
+
+/*estilo header*/
+
+.header{
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+justify-content: center;
+background-color: rgb(189, 207, 233);
+margin: 30px 50px 20px 50px;
+padding: 0px 0px 0px 0px;
+border: 3px solid black;
+
+}
+
+
+ header h1{
+   background-color: rgb(83, 181, 234);
+   margin: 30px 50px 30px 50px;
+   padding: 30px 50px 30px 5px;
+   border-bottom-left-radius: 60px;
+   color: black;
+   text-align: center;
+   box-shadow: 10px 10px 20px blue;
+
+}
+
+
+
+header img{
+ width: 400px;
+ height: 400px;
+ margin: 30px 100px 30px 200px;
+ border: 3px solid black;
+}
+
+
+header nav ul li {
+  font-size:x-large;
+  display: inline-block;
+  background-color: rgb(100, 215, 238);
+  margin: 10px;
+  padding: 10px;
+  border-bottom-left-radius: 30px;
+  position: sticky; 
+  margin-top: 100px;
+  top: 10px;
+}
+
+header nav ul li a{
+  text-decoration: none; 
+}
+
+
+
+/*estilo main uno*/
+
+.main{
+  background-color: aqua;
+  display:flex;
+  margin: 20px;
+  flex-wrap:nowrap ;
+  
+  
+}
+
+.col{
+  margin: 1rem;
+  background-color: bisque;
+  padding: 1rem;
+  
+}
+
+
+/*estilo main dos*/
+
+.main2{
+  margin: 20px;
+  display: grid;
+  grid-template-columns:;
+  grid-template-rows:;
+  gap: 20px;
+  grid-template-areas:
+  "hijo1 hijo1 hijo1"
+  "hijo2 hijo2 hijo3"
+  "hijo4 hijo4 hijo4";
+  
+}
+
+.hijo1{
+ background-color: aqua;
+ grid-area: hijo1;
+ justify-self: center;
+
+
+}
+.hijo2{
+  background-color: turquoise;
+  grid-area: hijo2;
+
+}
+.hijo3{
+  background-color: rgb(31, 112, 85);
+  grid-area: hijo3;
+  
+}
+
+.hijo4{
+  background-color: darkgreen;
+  grid-area: hijo4;
+  
+}
+
+
+
+
+/*estilo footer*/
+
+.wpp{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+
+footer {
+  margin: 20px;
+  display:grid;
+  gap: 20px;
+  
+
+}
+footer a{
+  font-size:x-large;
+  text-decoration: none;
+
+}
+
+
+
+/*estilos para celulares*/
