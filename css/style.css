@@ -1,13 +1,13 @@
 /* version dos*/
 *{
   margin: 0;
-  padding:0 ;
+  padding: 0;
   box-sizing: border-box;
 }
 
 
 body{
-  background-color: rgb(2, 2, 33);
+  background-color: rgb(39, 39, 196);
 }
 
 
@@ -27,7 +27,7 @@ border: 3px solid black;
 
 
  header h1{
-   background-color: rgb(83, 181, 234);
+   background-color: rgb(14, 76, 109);
    margin: 30px 50px 30px 50px;
    padding: 30px 50px 30px 5px;
    border-bottom-left-radius: 60px;
@@ -50,7 +50,7 @@ header img{
 header nav ul li {
   font-size:x-large;
   display: inline-block;
-  background-color: rgb(100, 215, 238);
+  background-color: rgb(12, 128, 151);
   margin: 10px;
   padding: 10px;
   border-bottom-left-radius: 30px;
@@ -68,7 +68,7 @@ header nav ul li a{
 /*estilo main uno*/
 
 .main{
-  background-color: aqua;
+  background-color: rgb(43, 19, 197);
   display:flex;
   margin: 20px;
   flex-wrap:nowrap ;
@@ -78,7 +78,7 @@ header nav ul li a{
 
 .col{
   margin: 1rem;
-  background-color: bisque;
+  background-color: rgb(12, 137, 240);
   padding: 1rem;
   
 }
@@ -100,25 +100,25 @@ header nav ul li a{
 }
 
 .hijo1{
- background-color: aqua;
+ background-color: rgb(61, 132, 219);
  grid-area: hijo1;
  justify-self: center;
 
 
 }
 .hijo2{
-  background-color: turquoise;
+  background-color: rgb(55, 121, 196);
   grid-area: hijo2;
 
 }
 .hijo3{
-  background-color: rgb(31, 112, 85);
+  background-color: rgb(46, 111, 168);
   grid-area: hijo3;
   
 }
 
 .hijo4{
-  background-color: darkgreen;
+  background-color: rgb(41, 81, 175);
   grid-area: hijo4;
   
 }
@@ -150,4 +150,44 @@ footer a{
 
 
 
-/*estilos para celulares*/
+/*estilos para celulares*/ 
+
+
+
+
+/*estilo tablets*/
+
+
+
+
+/*estilo escritorio*/
+
+
+
+
+/*estilo contacto*/
+.quienes{
+  margin: 2rem;
+  padding: 2rem;
+}
+
+/*estilo procedimientos1*/
+.colecciones{
+  margin: 2rem;
+  padding: 2rem;
+}
+/*estilos procedimientos2*/
+.vias{
+  margin: 2rem;
+  padding: 2rem;
+}
+/*estilos procedimientos3*/
+.nefrostomias{
+  margin: 2rem;
+  padding: 2rem;
+}
+/*estilos procedimientos3*/
+.biopsias{
+  margin: 2rem;
+  padding: 2rem;
+}
