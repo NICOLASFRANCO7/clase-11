@@ -1,174 +1,106 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background-color: rgb(239, 239, 242);
-}
-
-
-
-/* estilos generales */
-
-a:link{
-  text-decoration: none;
-}
-
-a:hover{
-  text-decoration: none;
-}
-
-
 /*estilo header*/
-
-.header {
+header {
+  margin: 10px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  align-items: center;
   justify-content: center;
-  background-color: rgb(189, 207, 233);
-  margin: 1.8rem 3.1rem 1.25rem 3.1rem;
-  padding: 0px 0px 0px 0px;
-  border: 3px solid black;
-}
-
-header h1 {
-  background-color: rgb(83, 181, 234);
-  margin: 1.8rem 3.1rem 1.8rem 3.1rem;
-  padding: 1.8rem 3.1rem 1.8rem 5px;
-  border-bottom-left-radius: 3.75rem;
-  color: black;
-  text-align: center;
-  box-shadow: 0.6rem 0.6rem 1.25rem blue; 
-}
-
-header img {
-  width: 40%;
-  height: 40%;
-  margin: 1.8rem 6.25rem 1.8rem 12.5rem;
-  border: 3px solid black;
-}
-
-header nav ul li {
-  font-size: x-large;
-  display: inline-block;
-  background-color: rgb(100, 215, 238);
-  margin: 0.6rem;
-  padding: 0.6rem;
-  border-bottom-left-radius: 1.8rem;
-  position: sticky;
-  margin-top: 6.25rem;
-}
+  align-items: center;
+  background-color: #c7e1f2; }
+  header img {
+    width: 40%;
+    height: 40%;
+    margin: 1.8rem 6.25rem 1.8rem 12.5rem;
+    border: 3px solid black; }
+  header h1 {
+    color: #0b257a;
+    font-size: 2 rem;
+    background-color: #41b4f1;
+    margin: 1.8rem 3.1rem 1.8rem 3.1rem;
+    padding: 1.8rem 3.1rem 1.8rem 5px;
+    border-bottom-left-radius: 3.75rem;
+    text-align: center; }
+  header nav {
+    display: flex;
+    justify-content: center; }
+    header nav ul {
+      list-style: none; }
+      header nav ul li {
+        font-size: x-large;
+        display: inline-block;
+        background-color: #64d7ee;
+        margin: 0.6rem;
+        padding: 0.6rem;
+        border-bottom-left-radius: 1.8rem;
+        position: sticky;
+        margin-top: 6.25rem; }
+      header nav ul a {
+        text-decoration: none; }
 
 /*estilo main uno*/
-
-
-.main{
+.main {
   display: flex;
   flex-wrap: nowrap;
   gap: 2rem;
-  justify-content: center;
-}
-
-.main div{
-  width: 15%;
-}
-
-.main .col {
-  margin: 1rem;
-  padding: 1rem;
-  background-color: bisque;
-}
-
-/* .main {
-  background-color: aqua;
-  display: flex;
-  flex-direction: column;
-  margin: 1.25rem;
-  flex-wrap: wrap;
-}
-
+  justify-content: center; }
+  .main .col {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #7e89ed; }
 
 /*estilo main dos*/
-
 .main2 {
   margin: 1.25rem;
   display: grid;
   gap: 1.25rem;
   justify-content: center;
-  grid-template-areas:
-    "hijo1 hijo1 hijo1"
-    "hijo2 hijo2 hijo3"
-    "hijo4 hijo4 hijo4";
-}
-
-.hijo1 {
-  background-color: aqua;
-  grid-area: hijo1; 
-  text-align: center;
-}
-.hijo2 {
-  background-color: turquoise;
-  grid-area: hijo2;
-}
-.hijo3 {
-  background-color: rgb(31, 112, 85);
-  grid-area: hijo3;
-}
-
-.hijo4 {
-  background-color: darkgreen;
-  grid-area: hijo4;
-}
+  grid-template-areas: "hijo1 hijo1 hijo1" "hijo2 hijo2 hijo3" "hijo4 hijo4 hijo4"; }
+  .main2 .hijo1 {
+    background-color: aqua;
+    grid-area: hijo1;
+    text-align: center; }
+  .main2 .hijo2 {
+    background-color: turquoise;
+    grid-area: hijo2; }
+  .main2 .hijo3 {
+    background-color: #1f7055;
+    grid-area: hijo3; }
+  .main2 .hijo4 {
+    background-color: darkgreen;
+    grid-area: hijo4; }
 
 /* estilos html contacto */
-.contacto{
-  padding: 1rem;
-}
+.contacto {
+  padding: 1rem; }
 
 /*estilo footer*/
-
-.wpp {
-  position: fixed;
-  bottom: 1.25rem;
-  right: 1.25rem;
-  width: 5rem;
-  height: 5rem;
-}
-
 footer {
   margin: 1.25rem;
   display: grid;
   gap: 1.25rem;
-}
-footer a {
-  font-size: x-large;
-  text-decoration: none;
-}
+  grid-template-areas: "son1 son2 son3" "son1 son2 son3" "son1 son2 son3"; }
+  footer .son1 {
+    grid-area: son1; }
+  footer .son2 {
+    grid-area: son2; }
+  footer .son3 {
+    grid-area: son3; }
+  footer a {
+    font-size: x-large;
+    text-decoration: none; }
 
 /*estilos para celulares*/
-@media screen and (max-width:800px){
-  
-  .main{
+@media screen and (max-width: 600px) {
+  .main {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     gap: 2rem;
-    align-items: center;
-  }
-
-  .main .col{
-    width: 80%;
-  }
-
+    align-items: center; }
+    .main .main .col {
+      width: 80%; }
   .main2 {
-    grid-template-areas:
-      "hijo1 hijo1 hijo1"
-      "hijo2 hijo2 hijo2"
-      "hijo3 hijo3 hijo3"
-      "hijo4 hijo4 hijo4";
-  }
-}
+    grid-template-areas: "hijo1 hijo1 hijo1" "hijo2 hijo2 hijo2" "hijo3 hijo3 hijo3" "hijo4 hijo4 hijo4"; }
+    .main2 .hijo1 .hijo2 .hijo3 .hijo4 {
+      width: 80%; } }
