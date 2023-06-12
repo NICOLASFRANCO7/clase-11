@@ -1,6 +1,16 @@
 @import "extra/vars";
+@import "extra/mixin";
+@import "extra/contacto";
+@import "extra/procedimientos1";
+@import "extra/procedimientos2";
+@import "extra/procedimientos3";
+@import "extra/procedimientos4";
 
 
+
+main{
+  @include margenes;
+}
 
 *{
   margin: 0;
@@ -11,6 +21,13 @@
 
 
 //nesting
+
+
+
+.body{
+  background-color: rgb(5, 16, 93);
+}
+
 /*estilo header*/
 header{
     margin: 10px;
@@ -20,7 +37,7 @@ header{
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    background-color: rgb(199, 225, 242);
+    background-color: rgb(12, 118, 190);
     img {
         width: 40%;
         height: 40%;
@@ -29,9 +46,9 @@ header{
       }
 
     h1{
-        color: rgb(11, 37, 122);
+        color: rgb(209, 213, 226);
         font-size: 2 rem;
-        background-color: rgb(91, 23, 88);
+        background-color: rgb(47, 113, 235);
         margin: 1.8rem 3.1rem 1.8rem 3.1rem;
         padding: 1.8rem 3.1rem 1.8rem 5px;
         border-bottom-left-radius: 3.75rem;
@@ -61,6 +78,8 @@ header{
 }
 /*estilo main uno*/
 
+
+
 .main{
     display: flex;
     flex-wrap: nowrap;
@@ -69,7 +88,7 @@ header{
     .col{
         margin: 1rem;
         padding: 1rem;
-        background-color: rgb(126, 137, 237);
+        background-color: rgb(201, 204, 236);
   }
 }
 /*estilo main dos*/
@@ -84,20 +103,20 @@ header{
       "hijo2 hijo2 hijo3"
       "hijo4 hijo4 hijo4";
       .hijo1 {
-        background-color: aqua;
+        background-color: rgb(201, 204, 236);
         grid-area: hijo1; 
         text-align: center;
       }
       .hijo2 {
-        background-color: turquoise;
+        background-color: rgb(201, 204, 236);
         grid-area: hijo2;
       }
       .hijo3 {
-        background-color: rgb(31, 112, 85);
+        background-color: rgb(201, 204, 236);
         grid-area: hijo3;
       }
       .hijo4 {
-        background-color: darkgreen;
+        background-color: rgb(201, 204, 236);
         grid-area: hijo4;
       }
   }
@@ -134,7 +153,7 @@ header{
   }
 }
 /*estilos para celulares*/
-@media screen and (max-width:600px){
+@media screen and (max-width:400px){
   
     .main{
       display: flex;

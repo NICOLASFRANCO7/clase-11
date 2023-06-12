@@ -1,7 +1,18 @@
+.mainProcedimientoUno {
+  margin: 1rem;
+  padding: 1rem; }
+
+main {
+  margin: 1rem;
+  padding: 1rem; }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
+
+.body {
+  background-color: #05105d; }
 
 /*estilo header*/
 header {
@@ -12,16 +23,16 @@ header {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  background-color: #c7e1f2; }
+  background-color: #0c76be; }
   header img {
     width: 40%;
     height: 40%;
     margin: 1.8rem 6.25rem 1.8rem 12.5rem;
     border: 3px solid black; }
   header h1 {
-    color: #0b257a;
+    color: #d1d5e2;
     font-size: 2 rem;
-    background-color: #5b1758;
+    background-color: #2f71eb;
     margin: 1.8rem 3.1rem 1.8rem 3.1rem;
     padding: 1.8rem 3.1rem 1.8rem 5px;
     border-bottom-left-radius: 3.75rem;
@@ -52,7 +63,7 @@ header {
   .main .col {
     margin: 1rem;
     padding: 1rem;
-    background-color: #7e89ed; }
+    background-color: #c9ccec; }
 
 /*estilo main dos*/
 .main2 {
@@ -62,17 +73,17 @@ header {
   justify-content: center;
   grid-template-areas: "hijo1 hijo1 hijo1" "hijo2 hijo2 hijo3" "hijo4 hijo4 hijo4"; }
   .main2 .hijo1 {
-    background-color: aqua;
+    background-color: #c9ccec;
     grid-area: hijo1;
     text-align: center; }
   .main2 .hijo2 {
-    background-color: turquoise;
+    background-color: #c9ccec;
     grid-area: hijo2; }
   .main2 .hijo3 {
-    background-color: #1f7055;
+    background-color: #c9ccec;
     grid-area: hijo3; }
   .main2 .hijo4 {
-    background-color: darkgreen;
+    background-color: #c9ccec;
     grid-area: hijo4; }
 
 /* estilos html contacto */
@@ -96,7 +107,7 @@ footer {
     text-decoration: none; }
 
 /*estilos para celulares*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 400px) {
   .main {
     display: flex;
     flex-direction: column;
