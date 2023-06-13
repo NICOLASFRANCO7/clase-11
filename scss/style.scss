@@ -19,7 +19,10 @@ main{
 
 //nesting
 
+.fotosvarias{
+  @include fotosvarias;
 
+}
 
 .body{
   background-color: rgb(5, 16, 93);
@@ -165,7 +168,13 @@ header{
 }
 /*estilos para celulares*/
 @media screen and (max-width:500px){
-    
+    .percu{
+      width: 400px;
+    }
+    .fotosvarias{
+      @include fotosvarias;
+  
+    }
     .main{
       display: flex;
       flex-direction: column;
@@ -197,6 +206,12 @@ header{
   .header .imagenHeader{
     width: 80%;
     margin: 1rem;
+  }
+  .percu{
+    width: 400px;
+  }
+  .fotosvarias{
+    @include fotosvarias;
   }
   .main{
     display: flex;
