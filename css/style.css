@@ -1,7 +1,3 @@
-.mainProcedimientoUno {
-  margin: 1rem;
-  padding: 1rem; }
-
 main {
   margin: 1rem;
   padding: 1rem; }
@@ -14,6 +10,7 @@ main {
 .body {
   background-color: #05105d; }
 
+/*para desktop*/
 /*estilo header*/
 header {
   margin: 10px;
@@ -23,18 +20,16 @@ header {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  background-color: #0c76be; }
+  background-color: #0c76be;
+  gap: 1rem; }
   header img {
-    width: 40%;
-    height: 40%;
-    margin: 1.8rem 6.25rem 1.8rem 12.5rem;
+    width: 600px;
     border: 3px solid black; }
   header h1 {
     color: #d1d5e2;
     font-size: 2 rem;
     background-color: #2f71eb;
-    margin: 1.8rem 3.1rem 1.8rem 3.1rem;
-    padding: 1.8rem 3.1rem 1.8rem 5px;
+    padding: 0.5rem 1.5rem;
     border-bottom-left-radius: 3.75rem;
     text-align: center; }
   header nav {
@@ -49,8 +44,7 @@ header {
         margin: 0.6rem;
         padding: 0.6rem;
         border-bottom-left-radius: 1.8rem;
-        position: sticky;
-        margin-top: 6.25rem; }
+        position: sticky; }
       header nav ul a {
         text-decoration: none; }
 
@@ -71,19 +65,22 @@ header {
   display: grid;
   gap: 1.25rem;
   justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-areas: "hijo1 hijo1 hijo1" "hijo2 hijo2 hijo3" "hijo4 hijo4 hijo4"; }
   .main2 .hijo1 {
     background-color: #c9ccec;
     grid-area: hijo1;
     text-align: center; }
   .main2 .hijo2 {
-    background-color: #c9ccec;
     grid-area: hijo2; }
+    .main2 .hijo2 iframe {
+      width: 80%;
+      height: 400px; }
   .main2 .hijo3 {
-    background-color: #c9ccec;
+    color: beige;
     grid-area: hijo3; }
   .main2 .hijo4 {
-    background-color: #c9ccec;
+    color: beige;
     grid-area: hijo4; }
 
 /* estilos html contacto */
@@ -102,12 +99,18 @@ footer {
     grid-area: son2; }
   footer .son3 {
     grid-area: son3; }
+  footer .wpp {
+    width: 40px;
+    position: fixed;
+    right: 15px;
+    bottom: 15px; }
   footer a {
     font-size: x-large;
-    text-decoration: none; }
+    text-decoration: none;
+    color: whitesmoke; }
 
 /*estilos para celulares*/
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .main {
     display: flex;
     flex-direction: column;
@@ -118,5 +121,25 @@ footer {
       width: 80%; }
   .main2 {
     grid-template-areas: "hijo1 hijo1 hijo1" "hijo2 hijo2 hijo2" "hijo3 hijo3 hijo3" "hijo4 hijo4 hijo4"; }
-    .main2 .hijo1 .hijo2 .hijo3 .hijo4 {
-      width: 80%; } }
+  .hijo2 iframe {
+    width: 100%;
+    height: 300px; } }
+
+/*estilo para tablets*/
+@media screen and (max-width: 800px) {
+  .header .imagenHeader {
+    width: 80%;
+    margin: 1rem; }
+  .main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center; }
+    .main .main .col {
+      width: 80%; }
+  .main2 {
+    grid-template-areas: "hijo1 hijo1 hijo1" "hijo2 hijo2 hijo2" "hijo3 hijo3 hijo3" "hijo4 hijo4 hijo4"; }
+  .hijo2 iframe {
+    width: 100%;
+    height: 300px; } }
